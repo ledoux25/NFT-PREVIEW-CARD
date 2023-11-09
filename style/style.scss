@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&display=swap');
+::after::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Outfit', sans-serif;
+}
+
+$main-bg :hsl(217, 54%, 11%);
+$card-bg : hsl(216, 50%, 16%);
+$line-background : hsl(215, 32%, 27%);
+$white :hsl(0, 0%, 100%);
+$text-blue : hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: $main-bg;
+    flex-direction: column;
+}
+main{
+    position: relative;
+    height: 65%;
+    width: 17%;
+    border-radius: 10px;
+    background-color: $card-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+    img{
+        position: relative;
+        height:55%;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+h2{
+    margin: 0;
+    color: $white;
+}
+p{
+    color: $text-blue;
+    font-size: 15px;
+    margin: 0;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+    
+    .price{
+        display: flex;
+        align-items: center;
+        color: $Cyan;
+        img{
+            height: 13px;
+            width: 8px;
+            margin-right: 5px;
+        }
+    }
+    .time-left{
+        display: flex;
+        align-items: center;
+        color: $text-blue;
+        img{
+            height: 13px;
+            width: 13px; 
+            margin-right: 5px;
+        }
+    }
+}
+
+.details::after{
+    content: "";
+    height: 1px;
+    background-color: $line-background;
+    width: 100%;
+    flex: 0 0 100%;
+    margin-top: 18px;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    img{
+         height: 30px;
+         width: 30px;
+         border: 1px white ;
+         margin-right: 15px;
+    }
+    span{
+        color: $text-blue;
+    }
+}
