@@ -27,6 +27,7 @@ body{
     background-color: $main-bg;
     flex-direction: column;
 }
+
 main{
     position: relative;
     height: 65%;
@@ -38,22 +39,57 @@ main{
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+
+    .nft{
+        background-color: $Cyan;
+        height: 55%;
+        border-radius: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .eye{
+        position: absolute;
+        height: 10%;
+        width: 15%;
+        z-index: 1;
+        display: none;
+    }
+
     img{
         position: relative;
-        height:55%;
+        height:100%;
         width: 100%;
         border-radius: 10px;
     }
+
+    .nft:hover .nft-image{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    .nft:hover .eye{
+        display: block;
+    }
 }
+
 h3{
     margin: 0;
     color: $white;
 }
+
+h3:hover{
+    color: $Cyan;
+    cursor: pointer;
+}
+
 p{
     color: $text-blue;
     font-size: 15px;
     margin: 0;
 }
+
 .details{
     display: flex;
     justify-content: space-between;
@@ -71,6 +107,7 @@ p{
             margin-right: 5px;
         }
     }
+
     .time-left{
         display: flex;
         align-items: center;
@@ -81,6 +118,7 @@ p{
             margin-right: 5px;
         }
     }
+
 }
 
 .details::after{
@@ -102,6 +140,7 @@ p{
          border-radius: 30px;
          margin-right: 10px;
     }
+
     span{
         color: $white;
         font-size: 15px;
@@ -109,6 +148,20 @@ p{
             color: $text-blue;
         }
     }
+
+    span:hover{
+        color: $Cyan;
+        cursor: pointer;
+    }
+    span{
+        span:hover{
+            color: $text-blue;
+        }
+    }
+    
+}
+footer{
+    padding-top: 20px;
 }
 
 @media screen and (max-width : 330px){

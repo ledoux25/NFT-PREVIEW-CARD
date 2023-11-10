@@ -33,16 +33,43 @@ main {
   justify-content: space-between;
   padding: 20px;
 }
+main .nft {
+  background-color: hsl(178, 100%, 50%);
+  height: 55%;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .eye {
+  position: absolute;
+  height: 10%;
+  width: 15%;
+  z-index: 1;
+  display: none;
+}
 main img {
   position: relative;
-  height: 55%;
+  height: 100%;
   width: 100%;
   border-radius: 10px;
+}
+main .nft:hover .nft-image {
+  opacity: 0.5;
+  cursor: pointer;
+}
+main .nft:hover .eye {
+  display: block;
 }
 
 h3 {
   margin: 0;
   color: hsl(0, 0%, 100%);
+}
+
+h3:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 p {
@@ -105,6 +132,17 @@ p {
 }
 .creator span .specific {
   color: hsl(215, 51%, 70%);
+}
+.creator span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.creator span span:hover {
+  color: hsl(215, 51%, 70%);
+}
+
+footer {
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 330px) {
