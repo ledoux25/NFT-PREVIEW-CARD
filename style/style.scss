@@ -30,13 +30,14 @@ body{
 main{
     position: relative;
     height: 65%;
-    width: 17%;
+    width: 18%;
     border-radius: 10px;
+    min-width: 240px;
     background-color: $card-bg;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 18px;
+    padding: 20px;
     img{
         position: relative;
         height:55%;
@@ -44,7 +45,7 @@ main{
         border-radius: 10px;
     }
 }
-h2{
+h3{
     margin: 0;
     color: $white;
 }
@@ -75,8 +76,8 @@ p{
         align-items: center;
         color: $text-blue;
         img{
-            height: 13px;
-            width: 13px; 
+            height: 15px;
+            width: 15px; 
             margin-right: 5px;
         }
     }
@@ -95,12 +96,35 @@ p{
     display: flex;
     align-items: center;
     img{
-         height: 30px;
-         width: 30px;
-         border: 1px white ;
-         margin-right: 15px;
+         height: 25px;
+         width: 25px;
+         border: 0.1px white solid;
+         border-radius: 30px;
+         margin-right: 10px;
     }
     span{
-        color: $text-blue;
+        color: $white;
+        font-size: 15px;
+        .specific{
+            color: $text-blue;
+        }
+    }
+}
+
+@media screen and (max-width : 330px){
+    main{
+        min-width: 200px;
+        height: 50%;
+    }
+    .creator{
+        span{
+            font-size: 11px;
+        }
+    }
+    p{
+        font-size: 12px;
+    }
+    .details{
+        font-size: 11px;
     }
 }
